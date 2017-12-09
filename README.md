@@ -2,15 +2,21 @@
 
 Criação de testes automatizados utilizando a ferramenta Selenium WebDriver.
 
-Casos de teste concluídos:
+* Casos de teste concluídos:
 
-Casos de teste em andamento:
-    Envio de senha para usuário cadastrado (Gabriel)
-    Envio de senha para usuário não cadastrado (Gabriel)
+* Casos de teste em andamento:
 
-Casos de teste a serem feitos:
-    Login com usuário cadastrado
-    Login com usuário não cadastrado
-    Cadastro de usuário com informações inválidas
-    Cadastro de usuário com informações válidas
+  * Envio de senha para usuário cadastrado (Gabriel)
     
+  * Envio de senha para usuário não cadastrado (Gabriel)
+
+* Casos de teste a serem feitos:
+
+  * Login com usuário cadastrado
+    
+  * Login com usuário não cadastrado
+    
+  * Cadastro de usuário com informações inválidas
+		
+  * Cadastro de usuário com informações válidas
+   
