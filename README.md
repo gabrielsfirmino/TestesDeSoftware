@@ -8,7 +8,9 @@ Criação de testes automatizados utilizando a ferramenta Selenium WebDriver.
 
 * Casos de teste em andamento:
 
-  * Envio de senha para usuário cadastrado (Gabriel)
+  * Envio de senha para usuário cadastrado (Gabriel) 
+  * Adicionar formação válida (Gabriel)
+  * Adicionar formação inválida (Gabriel)
 
 * Casos de teste a serem feitos:
 
@@ -21,7 +23,3 @@ Criação de testes automatizados utilizando a ferramenta Selenium WebDriver.
   * Cadastro de usuário com informações válidas
   
   * Editar informações do perfil do usuário
-  
-  * Adicionar formação válida
-  
-  * Adicionar formação inválida
