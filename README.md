@@ -23,3 +23,5 @@ Criação de testes automatizados utilizando a ferramenta Selenium WebDriver.
   * Editar informações do perfil do usuário
   
   * Adicionar formação válida
+  
+  * Adicionar formação inválida
