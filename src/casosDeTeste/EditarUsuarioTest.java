@@ -2,8 +2,6 @@ package casosDeTeste;
 
 import static org.junit.Assert.assertTrue;
 
-import java.io.File;
-
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,8 +14,7 @@ public class EditarUsuarioTest {
 	
 	@Test
 	public void TesteEditarUsuarioDadosValidos() {
-		File file = new File("C:\\Users\\CESAR\\Documents\\Github\\TrabFinalTestes\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-		System.setProperty("webdriver.gecko.driver", file.getAbsolutePath());
+		System.setProperty("webdriver.gecko.driver", LoginAcao.getAmbienteCesar().getAbsolutePath());
 		
 		WebDriver drive = new FirefoxDriver();
 		
@@ -63,8 +60,7 @@ public class EditarUsuarioTest {
 	
 	@Test
 	public void TesteEditarUsuarioDadosInvalidos() {
-		File file = new File("C:\\Users\\CESAR\\Documents\\Github\\TrabFinalTestes\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-		System.setProperty("webdriver.gecko.driver", file.getAbsolutePath());
+		System.setProperty("webdriver.gecko.driver", LoginAcao.getAmbienteCesar().getAbsolutePath());
 		
 		WebDriver drive = new FirefoxDriver();
 		

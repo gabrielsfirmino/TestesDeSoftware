@@ -18,7 +18,7 @@ public class AtualizarExperienciaTest
 	@Test
 	public void TesteAdicionarExperiencia() 
 	{
-		System.setProperty("webdriver.gecko.driver", "/home/gabrielsfirmino/Downloads/geckodriver");
+		System.setProperty("webdriver.gecko.driver", LoginAcao.AMBIENTE_GABRIEL);
 		
 		WebDriver drive = new FirefoxDriver();
 		

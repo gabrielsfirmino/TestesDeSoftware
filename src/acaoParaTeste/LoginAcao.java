@@ -1,11 +1,21 @@
 package acaoParaTeste;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginAcao 
 {
+	
+	public static final String AMBIENTE_GABRIEL = "/home/gabrielsfirmino/Downloads/geckodriver";
+	public static final String AMBIENTE_CESAR = "C:\\Users\\CESAR\\Documents\\Github\\TrabFinalTestes\\geckodriver-v0.19.1-win64\\geckodriver.exe";
+	
+	public static File getAmbienteCesar() {
+		File file = new File(AMBIENTE_CESAR);
+		return file;
+	}
 
 	public static void Logar(WebDriver drive, String usuario, int senha)
 	{

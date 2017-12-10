@@ -8,13 +8,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import acaoParaTeste.LoginAcao;
+
 public class EnviarSenhaTest 
 {
 
 	@Test
 	public void TesteEnviarSenhaParaEmailNaoCadastrado() 
 	{
-		System.setProperty("webdriver.gecko.driver", "/home/gabrielsfirmino/Downloads/geckodriver");
+		System.setProperty("webdriver.gecko.driver", LoginAcao.AMBIENTE_GABRIEL);
 		
 		WebDriver drive = new FirefoxDriver();
 		
@@ -42,7 +44,7 @@ public class EnviarSenhaTest
 	@Test
 	public void TesteEnviarSenhaParaEmailCadastrado() 
 	{
-		System.setProperty("webdriver.gecko.driver", "/home/gabrielsfirmino/Downloads/geckodriver");
+		System.setProperty("webdriver.gecko.driver", LoginAcao.AMBIENTE_GABRIEL);
 		
 		WebDriver drive = new FirefoxDriver();
 		
