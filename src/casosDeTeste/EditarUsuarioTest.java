@@ -1,6 +1,6 @@
 package casosDeTeste;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 import java.io.File;
 
