@@ -17,15 +17,15 @@ public class LoginAcao
 		return file;
 	}
 
-	public static void Logar(WebDriver drive, String usuario, int senha)
+	public static void Logar(WebDriver drive, String usuario, String senha)
 	{
 		By id_1 = By.id("user_email");
 		WebElement campoEmail_1 = drive.findElement(id_1);
-		campoEmail_1.sendKeys("gabrielsfirmino@alu.ufc.br");
+		campoEmail_1.sendKeys(usuario);
 		
 		By id_2 = By.id("user_password");
 		WebElement campoSenha_1 = drive.findElement(id_2);
-		campoSenha_1.sendKeys("85866021");
+		campoSenha_1.sendKeys(senha);
 		
 		By xpath_1 = By.xpath("//input[@class='btn btn-primary btn-block btn-flat']");
 		WebElement button_1 = drive.findElement(xpath_1);

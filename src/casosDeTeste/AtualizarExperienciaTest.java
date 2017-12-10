@@ -24,7 +24,7 @@ public class AtualizarExperienciaTest
 		
 		drive.get("http://med-profile.apps.intmed.com.br/");
 		
-		LoginAcao.Logar(drive, "gabrielsfirmino@alu.ufc.br", 85866021);
+		LoginAcao.Logar(drive, "gabrielsfirmino@alu.ufc.br", String.valueOf(85866021));
 		
 		By xpath_1 = By.xpath("//a[@href='/experiences/new']");
 		WebElement button_1 = drive.findElement(xpath_1);

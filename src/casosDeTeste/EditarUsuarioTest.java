@@ -20,7 +20,7 @@ public class EditarUsuarioTest {
 		
 		drive.get("http://med-profile.apps.intmed.com.br/");
 		
-		LoginAcao.Logar(drive, "gabrielsfirmino@alu.ufc.br", 85866021);
+		LoginAcao.Logar(drive, "gabrielsfirmino@alu.ufc.br", String.valueOf(85866021));
 		
 		By idUserBirthplace = By.id("user_birthplace");
 		WebElement userBirthplace = drive.findElement(idUserBirthplace);
@@ -56,6 +56,8 @@ public class EditarUsuarioTest {
 		String number = drive.findElement(By.xpath("//*[@id=\"edit_user_440\"]/div[1]/div[6]/div[2]/div/span")).getText();
 		
 		assertTrue((birthplace.isEmpty() && crm.isEmpty() && cep.isEmpty() && number.isEmpty()));
+		
+		drive.close();
 	}
 	
 	@Test
@@ -66,7 +68,7 @@ public class EditarUsuarioTest {
 		
 		drive.get("http://med-profile.apps.intmed.com.br/");
 		
-		LoginAcao.Logar(drive, "gabrielsfirmino@alu.ufc.br", 85866021);
+		LoginAcao.Logar(drive, "gabrielsfirmino@alu.ufc.br", String.valueOf(85866021));
 		
 		By idUserBirthplace = By.id("user_birthplace");
 		WebElement userBirthplace = drive.findElement(idUserBirthplace);
@@ -99,5 +101,7 @@ public class EditarUsuarioTest {
 		By xpathError = By.xpath("/html/body/div");
 		WebElement error = drive.findElement(xpathError);
 		assertTrue(error.isDisplayed());
+		
+		drive.close();
 	}
 }
