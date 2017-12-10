@@ -6,12 +6,12 @@ Criação de testes automatizados utilizando a ferramenta Selenium WebDriver.
 
   * Envio de senha para usuário não cadastrado (Gabriel)
   * Adicionar experiência (Gabriel)
+  * Editar perfil do usuário com informações válidas (César)
 
 * Casos de teste em andamento:
 
   * Envio de senha para usuário cadastrado (Gabriel) 
   * Remover experiência (Gabriel)
-  * Editar perfil do usuário com informações válidas (César)
   * Editar perfil do usuário com informações inválidas (César)
   * Login com usuário cadastrado (Gabriel)
 
