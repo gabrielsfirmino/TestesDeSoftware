@@ -57,32 +57,32 @@ public class AtualizarExperienciaTest
 		drive.close();
 	}
 	
-//	@Test
-//	public void TesteRemoverExperiencia() 
-//	{
-//		System.setProperty("webdriver.gecko.driver", "/home/gabrielsfirmino/Downloads/geckodriver");
-//		
-//		WebDriver drive = new FirefoxDriver();
-//		
-//		drive.get("http://med-profile.apps.intmed.com.br/");
-//		
-//		LoginAcao.Logar(drive, "gabrielsfirmino@alu.ufc.br", 85866021);
-//		
-//		By xpath_1 = By.xpath("//td[contains(text(), 'Testador')]//a[]");
-//		WebElement button_1 = drive.findElement(xpath_1);
-//		button_1.click();
-//		
-//		By xpath_2 = By.xpath("//a[contains(text(), 'Você tem certeza?')]");
-//		WebElement button_2 = drive.findElement(xpath_2);
-//		
-//		WebDriverWait wait = new WebDriverWait(drive, 5);
-//		wait.until(ExpectedConditions.visibilityOf(button_2));
-//		
-//		button_2.click();
-//		
-//		By xpath_3 = By.xpath("//div[@id='experiences']");
-//		WebElement elemento = drive.findElement(xpath_3);
-//		assertFalse(elemento.getText().contains("Testador"));
-//	}
+	@Test
+	public void TesteRemoverExperiencia() 
+	{
+		System.setProperty("webdriver.gecko.driver", "/home/gabrielsfirmino/Downloads/geckodriver");
+		
+		WebDriver drive = new FirefoxDriver();
+		
+		drive.get("http://med-profile.apps.intmed.com.br/");
+		
+		LoginAcao.Logar(drive, "gabrielsfirmino@alu.ufc.br", String.valueOf(85866021));
+		
+		By xpath_1 = By.xpath("//td[contains(text(), 'Testador')]//a[]");
+		WebElement button_1 = drive.findElement(xpath_1);
+		button_1.click();
+		
+		By xpath_2 = By.xpath("//a[contains(text(), 'Você tem certeza?')]");
+		WebElement button_2 = drive.findElement(xpath_2);
+		
+		WebDriverWait wait = new WebDriverWait(drive, 5);
+		wait.until(ExpectedConditions.visibilityOf(button_2));
+		
+		button_2.click();
+		
+		By xpath_3 = By.xpath("//div[@id='experiences']");
+		WebElement elemento = drive.findElement(xpath_3);
+		assertFalse(elemento.getText().contains("Testador"));
+	}
 
 }

@@ -62,6 +62,8 @@ public class EnviarSenhaTest
 		WebElement button_4 = drive.findElement(xpath_3);
 		button_4.click();
 		
+		assertTrue(drive.getCurrentUrl().equals("http://med-profile.apps.intmed.com.br/login"));
+		
 		drive.close();
 	}
 
