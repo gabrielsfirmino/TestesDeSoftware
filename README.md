@@ -1,4 +1,6 @@
-# Trabalho final da disciplina de Verificação, validação e teste de software
+# Projeto final - CK0241 Verificação, Validação e Teste de Software
+
+### Equipe: Gabriel Firmino (362963) e Cesár Rodrigues (347733)
 
 Criação de testes automatizados utilizando a ferramenta Selenium WebDriver.
 
