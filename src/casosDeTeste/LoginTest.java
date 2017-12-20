@@ -36,7 +36,7 @@ public class LoginTest {
 	
 	@Test
 	public void TesteLogarComUsuarioNaoCadastrado(){
-		System.setProperty("webdriver.gecko.driver", LoginAcao.getAmbienteCesar().getAbsolutePath());
+		System.setProperty("webdriver.gecko.driver", LoginAcao.AMBIENTE_GABRIEL);
 		
 		WebDriver drive = new FirefoxDriver();
 		

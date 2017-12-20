@@ -60,7 +60,7 @@ public class AtualizarExperienciaTest
 	@Test
 	public void TesteRemoverExperiencia() 
 	{
-		System.setProperty("webdriver.gecko.driver", "/home/gabrielsfirmino/Downloads/geckodriver");
+		System.setProperty("webdriver.gecko.driver", LoginAcao.AMBIENTE_GABRIEL);
 		
 		WebDriver drive = new FirefoxDriver();
 		
@@ -83,6 +83,8 @@ public class AtualizarExperienciaTest
 		By xpath_3 = By.xpath("//div[@id='experiences']");
 		WebElement elemento = drive.findElement(xpath_3);
 		assertFalse(elemento.getText().contains("Testador"));
+		
+		drive.close();
 	}
 
 }

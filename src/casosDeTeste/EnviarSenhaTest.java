@@ -14,7 +14,7 @@ public class EnviarSenhaTest
 {
 
 	@Test
-	public void TesteEnviarSenhaParaEmailNaoCadastrado() 
+	public void TesteEnviarSenhaParaEmailNaoCadastrado()
 	{
 		System.setProperty("webdriver.gecko.driver", LoginAcao.AMBIENTE_GABRIEL);
 		

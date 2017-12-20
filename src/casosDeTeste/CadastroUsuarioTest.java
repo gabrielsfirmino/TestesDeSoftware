@@ -17,7 +17,7 @@ public class CadastroUsuarioTest {
 	@Test
 	public void TesteCadastrarUsuarioInformacoesValidas() {
 		
-		System.setProperty("webdriver.gecko.driver", LoginAcao.getAmbienteCesar().getAbsolutePath());
+		System.setProperty("webdriver.gecko.driver", LoginAcao.AMBIENTE_GABRIEL);
 		
 		WebDriver drive = new FirefoxDriver();
 		
@@ -25,7 +25,7 @@ public class CadastroUsuarioTest {
 		
 		By idName = By.id("user_name");
 		WebElement userName = drive.findElement(idName);
-		userName.sendKeys("César Rodrigues Nascimento");
+		userName.sendKeys("Cï¿½sar Rodrigues Nascimento");
 		
 		By idUserCPF = By.id("user_cpf");
 		WebElement userCPF = drive.findElement(idUserCPF);
@@ -37,7 +37,7 @@ public class CadastroUsuarioTest {
 		
 		By idUserEmail = By.id("user_email");
 		WebElement userEmail = drive.findElement(idUserEmail);
-		userEmail.sendKeys("teste4322211@teste1342212.com");
+		userEmail.sendKeys("teste432221da1@teste1342212.com");
 		
 		By idPassword = By.id("user_password");
 		WebElement userPassword = drive.findElement(idPassword);
@@ -62,7 +62,7 @@ public class CadastroUsuarioTest {
 	@Test
 	public void TesteCadastrarUsuarioInformacoesInvalidas() {
 		
-		System.setProperty("webdriver.gecko.driver", LoginAcao.getAmbienteCesar().getAbsolutePath());
+		System.setProperty("webdriver.gecko.driver", LoginAcao.AMBIENTE_GABRIEL);
 		
 		WebDriver drive = new FirefoxDriver();
 		
@@ -70,7 +70,7 @@ public class CadastroUsuarioTest {
 		
 		By idName = By.id("user_name");
 		WebElement userName = drive.findElement(idName);
-		userName.sendKeys("César Rodrigues Nascimento");
+		userName.sendKeys("Cï¿½sar Rodrigues Nascimento");
 		
 		By idUserCPF = By.id("user_cpf");
 		WebElement userCPF = drive.findElement(idUserCPF);
