@@ -1,4 +1,4 @@
-# Projeto final - CK0241 Verificação, Validação e Teste de Software
+# Projeto final - CK0241 - Verificação, Validação e Teste de Software
 
 ### Equipe: Gabriel Firmino (362963) e Cesár Rodrigues (347733)
 
